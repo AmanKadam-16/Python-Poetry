@@ -9,14 +9,15 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "requests (>=2.32.4,<3.0.0)",
-    "beautifulsoup4 (>=4.13.4,<5.0.0)"
+    "beautifulsoup4 (>=4.13.4,<5.0.0)",
+    "poethepoet (>=0.37.0,<0.38.0)"
 ]
 
 [tool.poetry]
 packages = [{include = "code_red", from = "src"}]
 
-[tool.poetry.scripts]
-start = "main:main"
+[tool.poe.tasks]
+start = "python -m main"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.4.1"
