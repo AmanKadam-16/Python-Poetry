@@ -16,7 +16,7 @@ dependencies = [
 [tool.poetry]
 packages = [{include = "code_red", from = "src"}]
 
-[tool.poe.tasks]
+[tool.poetry_plugin_exec.scripts]
 start = "python -m main"
 
 [tool.poetry.group.dev.dependencies]
